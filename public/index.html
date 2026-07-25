@@ -1,1 +1,88 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+
+<title>Barcode Generator</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+<h1>Barcode Generator</h1>
+
+
+<label>Barcode Type</label>
+
+<select id="type">
+
+<option value="datamatrix">
+Data Matrix
+</option>
+
+<option value="qrcode">
+QR Code
+</option>
+
+<option value="code128">
+Code 128
+</option>
+
+<option value="pdf417">
+PDF417
+</option>
+
+</select>
+
+
+<label>Text</label>
+
+<textarea id="text">
+ABC123456789
+</textarea>
+
+
+<label>Scale</label>
+
+<input id="scale"
+type="number"
+value="5"
+min="1"
+max="20">
+
+
+<button onclick="generate()">
+Generate
+</button>
+
+
+<div>
+
+<img id="barcode">
+
+</div>
+
+
+<button onclick="download('png')">
+Download PNG
+</button>
+
+
+<button onclick="download('svg')">
+Download SVG
+</button>
+
+
+</div>
+
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
