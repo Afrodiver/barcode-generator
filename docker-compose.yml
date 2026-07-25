@@ -1,1 +1,10 @@
+version: "3.9"
 
+services:
+  barcode-generator:
+    build: .
+    container_name: barcode-generator
+    restart: unless-stopped
+
+    ports:
+      - "8085:3000"
