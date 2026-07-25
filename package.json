@@ -1,1 +1,10 @@
-
+{
+  "name": "barcode-generator",
+  "version": "1.0.0",
+  "description": "Self hosted barcode generator",
+  "main": "server.js",
+  "dependencies": {
+    "bwip-js": "^4.5.3",
+    "express": "^4.19.2"
+  }
+}
